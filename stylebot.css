@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(ellipse at center, #1b1b1b, #000);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+#container {
+  width: 100%;
+  max-width: 600px;
+  height: 600px;
+  position: relative;
+}
+
+/* ROBÔ */
+.robo {
+  position: relative;
+  width: 300px;
+  margin: auto;
+  top: 50px;
+}
+
+/* CABEÇA */
+.cabeca {
+  width: 140px;
+  height: 100px;
+  background: linear-gradient(to bottom, #3f51b5, #1a237e);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 40%, 100% 100%, 0% 100%, 0% 40%);
+  border: 4px solid #90caf9;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* OLHOS */
+.olho {
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #00e5ff, #004d40);
+  border-radius: 50%;
+  position: absolute;
+  top: 35px;
+  box-shadow: 0 0 8px #00e5ff;
+}
+
+.olho.esquerdo {
+  left: 25px;
+}
+
+.olho.direito {
+  right: 25px;
+}
+
+/* ANTENA */
+.antena {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 30px;
+  background: #ff4081;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #ff4081;
+}
+
+/* TRONCO */
+.tronco {
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(145deg, #00acc1, #006064);
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  top: -10px;
+  z-index: 1;
+  box-shadow: inset 0 0 10px #00e5ff;
+}
+
+.detalhe-central {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, #ff5722, #bf360c);
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px #ff5722;
+}
+
+.luz-painel {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #76ff03;
+  border-radius: 50%;
+  bottom: 15px;
+  left: 20px;
+  box-shadow: 0 0 10px #76ff03;
+}
+
+/* BRAÇOS */
+.braco {
+  width: 30px;
+  height: 120px;
+  background: linear-gradient(to bottom, #cfd8dc, #607d8b);
+  position: absolute;
+  top: 120px;
+  border-radius: 10px;
+}
+
+.braco.esquerdo {
+  left: 20px;
+}
+
+.braco.direito {
+  right: 20px;
+}
+
+/* PERNAS */
+.perna {
+  width: 40px;
+  height: 100px;
+  background: linear-gradient(to bottom, #78909c, #263238);
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.perna.esquerda {
+  left: 70px;
+}
+
+.perna.direita {
+  right: 70px;
+}
